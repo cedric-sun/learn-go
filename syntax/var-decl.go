@@ -1,28 +1,24 @@
 package main
 
+import "fmt"
+
 // declaration
-var a int, b bool
+var a int
 
-// only variable / function with capital first letter is exported
-var ExportValue int =3.1415;
+// combined declaration of the same type
+var b,c int
 
-// 
-var c,d int
-
-var e,f, int = 3,5
+// declaration with initializer
+var d,e int = 3,5
 
 // type can be omitted when initializer exists
-var c,python,java = true, false ,"string!"
+var perl,python,java = true, false ,"string!"
 
-// multiple return value
-funf return12() (string, string) {
-	return "abc","def"
+// only variable / function with capital first letter is exported
+var ExportValue float64 = 3.1415;
+
+func main() {
+	// short declaration, can only exist inside function
+	ruby := "ruby is a programming langauge"
+	fmt.Println(ruby)
 }
-
-// named return value
-func gao(para0, para1 int) (ret0, ret1 int) {
-	ret0,ret1 = para0, prar1
-	return	// naked return
-}
-
-
