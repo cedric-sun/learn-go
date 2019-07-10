@@ -2,11 +2,6 @@ package main
 
 import "fmt"
 
-/*
-	1. Instead of "var", use "const" to declare constants.
-	2. Constants CANNOT be declared using ":=" syntax
-	3.Type of constants will be automatically inferred.
-*/
 const Pi = 3.14
 
 const (
